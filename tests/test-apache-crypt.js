@@ -6,7 +6,7 @@ module.exports = {
     testValidPassword: function(test) {
         var crypted = crypt("validPass", "B5xBYM2HbnPqI");
 
-        test.ok(crypted, "B5xBYM2HbnPqI", "Wrong password!");
+        test.equal(crypted, "B5xBYM2HbnPqI", "Wrong password!");
         test.done();
     },
     // Test for invalid password.
