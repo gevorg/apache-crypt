@@ -21,7 +21,9 @@ $ npm install apache-crypt
 
 ```javascript
 var crypt = require("apache-crypt");
-var encryptedPassword = crypt("mypass"); // Encrypting password using auto-generated 2 char salt.
+
+// Encrypting password using auto-generated 2 char salt.
+var encryptedPassword = crypt("mypass");
 
 // Should print true.
 console.log(crypt("mypass", encryptedPassword) == encryptedPassword);
