@@ -23,8 +23,10 @@ $ npm install apache-crypt
 var crypt = require("apache-crypt");
 var encryptedPassword = crypt("mypass"); // Encrypting password using auto-generated 2 char salt.
 
-console.log(crypt("mypass", encryptedPassword) == encryptedPassword); // Should print true.
-console.log(crypt("notmypass", encryptedPassword) == encryptedPassword); // Should print false.
+// Should print true.
+console.log(crypt("mypass", encryptedPassword) == encryptedPassword);
+// Should print false.
+console.log(crypt("notmypass", encryptedPassword) == encryptedPassword);
 ```
 
 ## Running tests
