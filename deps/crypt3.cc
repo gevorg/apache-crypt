@@ -5,7 +5,11 @@
 
 #include <time.h>
 #include <stdlib.h>
+#ifdef __APPLE__
+#include <unistd.h>
+#else
 #include <crypt.h>
+#endif
 
 using namespace v8;
 
