@@ -3,13 +3,8 @@
 #include <node.h>
 #include <v8.h>
 
-#include <time.h>
 #include <stdlib.h>
-#ifdef __APPLE__
 #include <unistd.h>
-#else
-#include <crypt.h>
-#endif
 
 using namespace v8;
 
