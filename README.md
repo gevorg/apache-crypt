@@ -4,7 +4,7 @@
 [![Build Status](https://api.travis-ci.org/gevorg/apache-crypt.png)](https://travis-ci.org/gevorg/apache-crypt)
 [![Dependency Status](https://david-dm.org/gevorg/apache-crypt.png)](https://david-dm.org/gevorg/apache-crypt)
 
-## Installation
+## Installation (DOES NOT WORK ON WINDOWS)
 
 Via git (or downloaded tarball):
 

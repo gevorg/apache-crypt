@@ -4,12 +4,7 @@
 #include <v8.h>
 
 #include <stdlib.h>
-
-#ifdef WIN32
-#include <crypt.h>
-#else
 #include <unistd.h>
-#endif
 
 using namespace v8;
 
