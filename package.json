@@ -21,6 +21,7 @@
 			"url": "http://github.com/gevorg/apache-crypt/blob/master/LICENSE"
 		}
 	],
+    "os" : [ "!win32" ],
 	"bugs": {
 		"url": "http://github.com/gevorg/apache-crypt/issues"
 	},
