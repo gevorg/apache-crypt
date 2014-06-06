@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
+#include <nan.h>
 
 using namespace v8;
 
@@ -26,29 +27,29 @@ const char* GetApacheSalt()
     return salt;
 }
 
-Handle<Value> Method(const Arguments& args) {
-	HandleScope scope;
+NAN_METHOD(Method) {
+	NanScope();
 
     if (args.Length() == 0) {
-        ThrowException(Exception::TypeError(String::New("Password is required")));
-        return scope.Close(Undefined());
+        NanTypeError("Password is required");
+        NanReturnUndefined();
     }
 
     if (!args[0]->IsString() || (args.Length() > 1 && !args[1]->IsString())) {
-        ThrowException(Exception::TypeError(String::New("Wrong arguments")));
-        return scope.Close(Undefined());
+        NanTypeError("Wrong arguments");
+        NanReturnUndefined();
     }
 
 
     v8::String::Utf8Value password(args[0]->ToString());
-    v8::String::Utf8Value salt(args.Length() > 1 ? args[1]->ToString() : String::New(GetApacheSalt()));
+    v8::String::Utf8Value salt(args.Length() > 1 ? args[1]->ToString() : NanNew<String>(GetApacheSalt()));
 
-    Local<String> res = String::New( crypt(*password, *salt ) );
-    return scope.Close(res);
+    Local<String> res = NanNew<String>( crypt(*password, *salt ) );
+    NanReturnValue(res);
 }
 
 void init(Handle<Object> exports) {
-	exports->Set(String::NewSymbol("crypt"), FunctionTemplate::New(Method)->GetFunction());
+	exports->Set(NanNew<String>("crypt"), NanNew<FunctionTemplate>(Method)->GetFunction());
 }
 
 NODE_MODULE(crypt3, init)
