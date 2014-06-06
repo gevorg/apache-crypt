@@ -9,7 +9,10 @@
             "libraries": ["-lcrypt"]
           }]
         ]
-      }
+      },
+      "include_dirs" : [
+        "<!(node -e \"require('nan')\")"
+      ]
     }
   ]
 }
