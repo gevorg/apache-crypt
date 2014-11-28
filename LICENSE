@@ -18,3 +18,13 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+crypt_to64.c - copyright 1991 University of California
+crypt_to64.h - copyright 1991 University of California
+des.c - copyright 1994 David Burren, Geoffrey M. Rehmet, Mark R V Murray
+md5.c - copyright 1999, 2000, 2002 Aladdin Enterprises
+md5.h - copyright 1999, 2000, 2002 Aladdin Enterprises
+md5crypt.c - copyright Poul-Henning Kamp
+md5crypt.h - copyright Poul-Henning Kamp
+sha256crypt.c - public domain reference implementation by Ulrich Drepper
+sha512crypt.c - public domain reference implementation by Ulrich Drepper
