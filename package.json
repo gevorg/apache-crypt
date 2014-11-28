@@ -1,7 +1,7 @@
 {
 	"name": "apache-crypt",
 	"description": "Node.js module for Apache style password encryption using crypt(3).",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"author": "Gevorg Harutyunyan (http://github.com/gevorg)",
 	"maintainers": [
 		{
@@ -27,6 +27,9 @@
 	"bugs": {
 		"url": "http://github.com/gevorg/apache-crypt/issues"
 	},
+	"dependencies": {
+	  "ffi": "1.2.7"
+	},
 	"devDependencies": {
 		"nodeunit": "0.9.0"
 	},
@@ -42,8 +45,5 @@
 		"crypt",
 		"password",
 		"htpasswd"
-	],
-	"dependencies": {
-		"nan": "1.2.0"
-	}
+	]
 }
