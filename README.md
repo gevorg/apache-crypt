@@ -47,7 +47,6 @@ You can find list of issues using **[this link](http://github.com/gevorg/apache-
 
  - **[Node.js](http://nodejs.org)** - Event-driven I/O server-side JavaScript       environment based on V8.
  - **[npm](http://npmjs.org)** - Package manager. Installs, publishes and manages   node programs.
- - **[node-gyp](https://github.com/TooTallNate/node-gyp)** - Node.js native addon build tool.
 
 ## Development dependencies
 
