@@ -1,4 +1,4 @@
-var jslib = require('libcrypt.js');
+var jslib = require('./libcrypt');
 
 var apacheCrypt = require('../lib/apache-crypt');
 var res1 = jslib.crypt("passwd", '$5$dd');
