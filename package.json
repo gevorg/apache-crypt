@@ -1,7 +1,7 @@
 {
   "name": "apache-crypt",
   "description": "Node.js module for Apache style password encryption using crypt(3).",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "Gevorg Harutyunyan (http://github.com/gevorg)",
   "maintainers": [
     {
