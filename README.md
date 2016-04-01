@@ -1,15 +1,15 @@
 # apache-crypt
 [Node.js](http://nodejs.org/) package for Apache style password encryption using crypt(3).
 
-[![Build Status](https://api.travis-ci.org/gevorg/apache-crypt.png)](https://travis-ci.org/gevorg/apache-crypt)
-[![Dependency Status](https://david-dm.org/gevorg/apache-crypt.png)](https://david-dm.org/gevorg/apache-crypt)
+[![Build Status](https://api.travis-ci.org/http-auth/apache-crypt.png)](https://travis-ci.org/http-auth/apache-crypt)
+[![Dependency Status](https://david-dm.org/http-auth/apache-crypt.png)](https://david-dm.org/http-auth/apache-crypt)
 
 ## Installation
 
 Via git (or downloaded tarball):
 
 ```bash
-$ git clone git://github.com/gevorg/apache-crypt.git
+$ git clone git://github.com/http-auth/apache-crypt.git
 ```
 Via [npm](http://npmjs.org/):
 
@@ -41,7 +41,7 @@ $ npm test
 
 ## Issues
 
-You can find list of issues using **[this link](http://github.com/gevorg/apache-crypt/issues)**.
+You can find list of issues using **[this link](http://github.com/http-auth/apache-crypt/issues)**.
 
 ## Requirements
 
