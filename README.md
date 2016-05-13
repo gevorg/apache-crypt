@@ -50,8 +50,7 @@ You can find list of issues using **[this link](http://github.com/http-auth/apac
 
 ## Dependencies
 
- - **[nodeunit](https://github.com/caolan/nodeunit/)** - Easy unit testing in node.js and the browser, based on the assert module.
-
+ - **[unix-crypt-td-js](https://github.com/TimDumol/unix-crypt-td-js/)** - Javascript implementation of the Unix crypt(3) DES-based hash.
 
 ## Development dependencies
 
