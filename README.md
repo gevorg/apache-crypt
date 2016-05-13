@@ -48,6 +48,11 @@ You can find list of issues using **[this link](http://github.com/http-auth/apac
  - **[Node.js](http://nodejs.org)** - Event-driven I/O server-side JavaScript       environment based on V8.
  - **[npm](http://npmjs.org)** - Package manager. Installs, publishes and manages   node programs.
 
+## Dependencies
+
+ - **[nodeunit](https://github.com/caolan/nodeunit/)** - Easy unit testing in node.js and the browser, based on the assert module.
+
+
 ## Development dependencies
 
  - **[nodeunit](https://github.com/caolan/nodeunit/)** - Easy unit testing in node.js and the browser, based on the assert module.

@@ -8,23 +8,15 @@ function cryptTest (i, j, k, validate) {
     var key;
     var salt;
     switch (j) {
-        case 0: 
-            key = keys.md5;
-            salt = salts.md5_1;
-            break;
-        case 1:
-            key = keys.md5;
-            salt = salts.md5_apr1;
-            break; 
-        case 2:
+        case 0:
             key = keys.sha256;
             salt = salts.sha256;
             break;
-        case 3:
+        case 1:
             key = keys.sha512;
             salt = salts.sha512;
             break;
-        case 4:
+        case 2:
             key = keys.des;
             salt = salts.des;
     }
@@ -41,10 +33,11 @@ function cryptTest (i, j, k, validate) {
 
 function runTest (test, i) {
     var err = '';
-    for (var j = 0; j < 5; ++j) {
+    for (var j = 0; j < 3; ++j) {
         for (var k = 0; k < 4; ++k) {
             err = 'failure of Test: ' + i.toString() + '-' + j + '-' + k;
-            if (!(j === 4 && k === 0)) {                        
+
+            if (!(j === 2 && k === 0)) {
                 test.strictEqual(cryptTest(i, j, k), results[i][j][k], err);    
             } else {
                 test.doesNotThrow(function () {
@@ -57,49 +50,54 @@ function runTest (test, i) {
 }  
 
 module.exports.passwordField = {
-    
     noPassword: function (test) {
         test.throws(function () {
             crypt();
         });
+
         runTest(test, 0);
         test.done();
     },
 
     withinMaxLength: function (test) {
         runTest(test, 1);
+
         test.done();
     },
 
     maxLength: function (test) {
         runTest(test, 2);
+
         test.done();
     },
 
     exceedsMaxLength: function (test) {
         runTest(test, 3);
+
         test.done();
     }
-}
+};
 
 
 module.exports.validate = {
     // Test for valid password.
     testValidPassword: function(test) {
-        var crypted = ''
+        var crypted = '';
         
-        for (var j = 0; j < 5; ++j) {
+        for (var j = 0; j < 3; ++j) {
             crypted = cryptTest(1, j, 2);
             test.strictEqual(cryptTest(1, j, 2, crypted), crypted);
         
         }
+
         test.done();
     },
+
     // Test for invalid password.
     testInValidPassword: function(test) {
-        var crypted = ''
+        var crypted = '';
 
-        for (var j = 0; j < 5; ++j) {
+        for (var j = 0; j < 3; ++j) {
             crypted = cryptTest(1, j, 2);
             test.notStrictEqual(cryptTest(2, j, 2, crypted), crypted);
         }
