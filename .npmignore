@@ -6,3 +6,4 @@ apache-crypt.iml
 .settings
 src
 test
+.travis.yml
