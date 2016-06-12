@@ -4,7 +4,7 @@
 import {expect} from 'chai'
 
 // Import source.
-import crypt from '../gensrc/index'
+import crypt from '../src/index'
 
 // apache-md5 tests.
 describe('apache-crypt', function () {
