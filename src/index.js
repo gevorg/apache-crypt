@@ -1,7 +1,7 @@
 "use strict";
 
 // Des module.
-import des from 'unix-crypt-td-js'
+const des = require('unix-crypt-td-js');
 
 // Hash generation string.
 const itoa64 = "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
@@ -13,6 +13,6 @@ function getSalt() {
 }
 
 // Exporting old style.
-module.exports = function(password, salt) {
+module.exports = (password, salt) => {
     return salt ? des(password, salt) : des(password, getSalt());
 };

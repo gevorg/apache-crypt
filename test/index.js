@@ -1,21 +1,21 @@
 "use strict";
 
 // Expect module.
-import {expect} from 'chai'
+const expect = require('chai').expect;
 
 // Import source.
-import crypt from '../src/index'
+const crypt = require('../src/index');
 
 // apache-md5 tests.
-describe('apache-crypt', function () {
+describe('apache-crypt', () => {
     // Test for valid password.
-    it('valid password', function () {
+    it('valid password', () => {
         const encrypted = crypt("validPass", "B5xBYM2HbnPqI");
         expect(encrypted).to.equal("B5xBYM2HbnPqI");
     });
 
     // Test for invalid password.
-    it('invalid password', function () {
+    it('invalid password', () => {
         const encrypted = crypt("invalidPass", "B5xBYM2HbnPqI");
         expect(encrypted).to.not.equal("B5xBYM2HbnPqI");
     });
