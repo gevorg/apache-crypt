@@ -4,6 +4,5 @@ node_modules
 apache-crypt.iml
 .idea
 .settings
-src
 test
 .travis.yml
