@@ -1,7 +1,7 @@
 {
   "name": "apache-crypt",
   "description": "Node.js module for Apache style password encryption using crypt(3).",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "Gevorg Harutyunyan (http://github.com/gevorg)",
   "maintainers": [
     {
@@ -33,7 +33,7 @@
     "chai": "^3.5.0"
   },
   "engines": {
-    "node": ">=6.7.0"
+    "node": ">=4.6.1"
   },
   "scripts": {
     "test": "mocha"
