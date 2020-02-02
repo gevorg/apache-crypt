@@ -1,7 +1,7 @@
 # apache-crypt
 [Node.js](http://nodejs.org/) package for Apache style password encryption using crypt(3).
 
-[![Build Status](https://api.travis-ci.org/http-auth/apache-crypt.png)](https://travis-ci.org/http-auth/apache-crypt)
+[![build](https://github.com/http-auth/apache-crypt/workflows/build/badge.svg)](https://github.com/http-auth/apache-crypt/actions?query=workflow%3Abuild)
 
 ## Installation
 
@@ -50,11 +50,6 @@ You can find list of issues using **[this link](http://github.com/http-auth/apac
 ## Dependencies
 
  - **[unix-crypt-td-js](https://github.com/TimDumol/unix-crypt-td-js/)** - Javascript implementation of the Unix crypt(3) DES-based hash.
-
-## Development dependencies
-
- - **[mocha](https://mochajs.org/)** - simple, flexible, fun javascript test framework for node.js & the browser.
- - **[chai](http://chaijs.com/)** - BDD / TDD assertion framework for node.js and the browser that can be paired with any testing framework.
 
 ## License
 
