@@ -16,7 +16,7 @@ Via [npm](http://npmjs.org/):
 $ npm install apache-crypt
 ```
 
-## Usage
+## Usage 2
 
 ```javascript
 const crypt = require("apache-crypt");
