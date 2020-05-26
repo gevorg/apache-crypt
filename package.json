@@ -47,7 +47,6 @@
   "keywords": [
     "apache",
     "crypt",
-    "password",
-    "htpasswd"
+    "password"
   ]
 }
