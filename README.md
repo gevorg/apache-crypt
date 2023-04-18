@@ -8,7 +8,7 @@
 Via git (or downloaded tarball):
 
 ```bash
-$ git clone git://github.com/gevorg/apache-crypt.git
+$ git clone git@github.com:gevorg/apache-crypt.git
 ```
 Via [npm](http://npmjs.org/):
 
